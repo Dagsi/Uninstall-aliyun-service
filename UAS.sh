@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: wbx123
-# Blog: https://wbx123.com
+# Editor: dagsi
 
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
@@ -18,8 +18,8 @@ stty $SAVEDSTTY
 clear
 printf "
 #######################################################################
-#                    Uninstall-aliyun-service    V1.0.5               #
-#       For more information please visit https://wbx123.com          #
+#                    Uninstall-aliyun-service    V1.0.6               #
+#       For more information please visit https://github.com/Dagsi          #
 #######################################################################
 "
 
@@ -105,14 +105,14 @@ iptables -I INPUT -s 106.11.222.192/26 -j DROP
 iptables -I INPUT -s 106.11.223.0/26 -j DROP
 service iptables save
 rm -rf /etc/motd
-wget -O /etc/motd -N --no-check-certificate https://raw.githubusercontent.com/123wbx321wbx/Uninstall-aliyun-service/master/Other/motd
+wget -O /etc/motd -N --no-check-certificate https://raw.githubusercontent.com/Dagsi/Uninstall-aliyun-service/master/Other/motd
 cd -
 rm -rf Uninstall-aliyun-service
 clear
 
 printf "
 #######################################################################
-#                    Uninstall-aliyun-service    V1.0.5               #
+#                    Uninstall-aliyun-service    V1.0.6               #
 #                                 Done!                               #
 #######################################################################
 "
