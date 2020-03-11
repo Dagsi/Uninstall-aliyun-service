@@ -62,6 +62,7 @@ iptables -I INPUT -s 140.205.225.206/32 -j DROP
 iptables -I INPUT -s 140.205.225.205/32 -j DROP
 iptables -I INPUT -s 140.205.225.195/32 -j DROP
 iptables -I INPUT -s 140.205.225.204/32 -j DROP
+iptables -I INPUT -s 140.205.140.0/24 -j DROP
 iptables -I INPUT -s 106.11.222.0/23 -j DROP
 iptables -I INPUT -s 106.11.224.0/24 -j DROP
 iptables -I INPUT -s 106.11.228.0/22 -j DROP
@@ -73,36 +74,13 @@ iptables -I INPUT -s 106.11.222.64/26 -j DROP
 iptables -I INPUT -s 106.11.222.128/26 -j DROP
 iptables -I INPUT -s 106.11.222.192/26 -j DROP
 iptables -I INPUT -s 106.11.223.0/26 -j DROP
-iptables -I INPUT -s 140.205.201.0/28 -j DROP
-iptables -I INPUT -s 140.205.201.16/29 -j DROP
-iptables -I INPUT -s 140.205.201.32/28 -j DROP
-iptables -I INPUT -s 140.205.225.192/29 -j DROP
-iptables -I INPUT -s 140.205.225.200/30 -j DROP
-iptables -I INPUT -s 140.205.225.184/29 -j DROP
-iptables -I INPUT -s 140.205.225.183/32 -j DROP
-iptables -I INPUT -s 140.205.225.206/32 -j DROP
-iptables -I INPUT -s 140.205.225.205/32 -j DROP
-iptables -I INPUT -s 140.205.225.195/32 -j DROP
-iptables -I INPUT -s 140.205.225.204/32 -j DROP
-iptables -I INPUT -s 140.205.201.0/28 -j DROP
-iptables -I INPUT -s 140.205.201.16/29 -j DROP
-iptables -I INPUT -s 140.205.201.32/28 -j DROP
-iptables -I INPUT -s 140.205.225.192/29 -j DROP
-iptables -I INPUT -s 140.205.225.200/30 -j DROP
-iptables -I INPUT -s 140.205.225.184/29 -j DROP
-iptables -I INPUT -s 140.205.225.183/32 -j DROP
-iptables -I INPUT -s 140.205.225.206/32 -j DROP
-iptables -I INPUT -s 140.205.225.205/32 -j DROP
-iptables -I INPUT -s 140.205.225.195/32 -j DROP
-iptables -I INPUT -s 140.205.225.204/32 -j DROP
-iptables -I INPUT -s 106.11.224.0/26 -j DROP
-iptables -I INPUT -s 106.11.224.64/26 -j DROP
-iptables -I INPUT -s 106.11.224.128/26 -j DROP
-iptables -I INPUT -s 106.11.224.192/26 -j DROP
-iptables -I INPUT -s 106.11.222.64/26 -j DROP
-iptables -I INPUT -s 106.11.222.128/26 -j DROP
-iptables -I INPUT -s 106.11.222.192/26 -j DROP
-iptables -I INPUT -s 106.11.223.0/26 -j DROP
+iptables -I INPUT -s 106.11.68.0/24 -j DROP
+iptables -I INPUT -s 42.156.166.0/24 -j DROP
+iptables -I INPUT -s 10.143.23.0/24 -j DROP
+iptables -I INPUT -s 100.100.25.0/24 -j DROP
+iptables -I INPUT -s 110.173.196.0/24 -j DROP
+iptables -I INPUT -s 110.75.114.0/24 -j DROP
+iptables -I INPUT -s 110.75.102.0/24 -j DROP
 service iptables save
 rm -rf /etc/motd
 wget -O /etc/motd -N --no-check-certificate https://raw.githubusercontent.com/Dagsi/Uninstall-aliyun-service/master/Other/motd
