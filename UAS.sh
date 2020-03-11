@@ -65,6 +65,14 @@ iptables -I INPUT -s 140.205.225.204/32 -j DROP
 iptables -I INPUT -s 106.11.222.0/23 -j DROP
 iptables -I INPUT -s 106.11.224.0/24 -j DROP
 iptables -I INPUT -s 106.11.228.0/22 -j DROP
+iptables -I INPUT -s 106.11.224.0/26 -j DROP
+iptables -I INPUT -s 106.11.224.64/26 -j DROP
+iptables -I INPUT -s 106.11.224.128/26 -j DROP
+iptables -I INPUT -s 106.11.224.192/26 -j DROP
+iptables -I INPUT -s 106.11.222.64/26 -j DROP
+iptables -I INPUT -s 106.11.222.128/26 -j DROP
+iptables -I INPUT -s 106.11.222.192/26 -j DROP
+iptables -I INPUT -s 106.11.223.0/26 -j DROP
 service iptables save
 rm -rf /etc/motd
 wget -O /etc/motd -N --no-check-certificate https://raw.githubusercontent.com/123wbx321wbx/Uninstall-aliyun-service/master/Other/motd
